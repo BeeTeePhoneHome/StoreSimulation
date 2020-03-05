@@ -18,4 +18,6 @@ class Store(object):
             store(lane).addToLine(customer)
         for i, each in enumerate(self.store):
             each.process()
+        
+        self.global_time=self.global_time+1
        
